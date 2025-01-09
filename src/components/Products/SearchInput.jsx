@@ -19,7 +19,7 @@ const SearchInput = () => {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Tìm kiếm sản phẩm..."
-        className="bg-[#f0f0f0] focus:bg-transparent border-none active:bg-transparent focus-visible:border-none focus:outline-none px-3"
+        className="bg-[#f0f0f0] w-[100%] focus:bg-transparent border-none active:bg-transparent focus-visible:border-none focus:outline-none px-3"
       />
       <button
         onClick={handleSearch}
