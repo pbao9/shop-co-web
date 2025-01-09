@@ -19,7 +19,7 @@ const ProductDetail = () => {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{productDetail.title}</title>
+        <title>Sản phẩm - {productDetail.title}</title>
         <meta name="description" content="Helmet application" />
       </Helmet>
       <h1>Chi tiết sản phẩm</h1>
@@ -27,7 +27,7 @@ const ProductDetail = () => {
       <h2>{productDetail.title}</h2>
       <p>{productDetail.description}</p>
       <img src={productDetail.thumbnail} alt={productDetail.title} />
-
+      <span>{productDetail.price}</span>
       <h3>Tags</h3>
       <ul>
         {productDetail.tags.map((tag, index) => (

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router";
+import SearchInput from "./SearchInput";
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
@@ -12,15 +13,7 @@ const ProductList = () => {
 
   return (
     <div>
-      <div className="flex flex-row space-x-3">
-        <input
-          type="text"
-          placeholder="Tìm kiếm sản phẩm..."
-          className="border rounded px-2"
-        />
-
-        <button className="bg-green-400 px-2 rounded text-dark">Search</button>
-      </div>
+      <SearchInput />
 
       <h1 className="font-bold uppercase">Danh sách sản phẩm</h1>
       <ul>
