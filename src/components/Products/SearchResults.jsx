@@ -16,8 +16,8 @@ const SearchResults = () => {
     }
   }, [query]);
 
-  if (!query) {
-    return <div>Không có từ khóa tìm kiếm</div>;
+  if (!query || products.length <= 0) {
+    return <div>Không có từ khóa tìm kiếm hoặc không tồn tại sản phẩm!</div>;
   }
 
   return (

@@ -1,11 +1,11 @@
-import React from "react";
 import { Outlet } from "react-router";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import { Helmet } from "react-helmet";
+import Header from "../../components/Layouts/Header";
+import Footer from "../../components/Layouts/Footer";
+import TopBar from "../../components/Layouts/TopBar";
 const Master = () => {
   return (
-    <div>
+    <div className="page-content">
+      <TopBar />
       <Header />
       <div className="page container m-auto">
         <Outlet />
