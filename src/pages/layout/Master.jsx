@@ -7,7 +7,7 @@ const Master = () => {
     <div className="page-content">
       <TopBar />
       <Header />
-      <div className="page container m-auto">
+      <div className="page container m-auto py-20">
         <Outlet />
       </div>
       <Footer />

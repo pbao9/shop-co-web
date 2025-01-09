@@ -23,7 +23,7 @@ const SearchInput = () => {
       />
       <button
         onClick={handleSearch}
-        className="bg-slate-500 mr-1 rounded-[50px] h-10 w-10 hover:bg-slate-400 transition-all ease-in-out duration-500 group flex justify-center items-center"
+        className="bg-slate-500 rounded-[50%] h-10 w-11 hover:bg-slate-400 transition-all ease-in-out duration-500 group flex justify-center items-center"
       >
         <FaSearch className="text-[#fff]/40 group-hover:text-white transition-all ease-in-out duration-500" />
       </button>
