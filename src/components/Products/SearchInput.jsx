@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import { FaSearch } from "react-icons/fa";
 
 const SearchInput = () => {
   const [query, setQuery] = useState("");
@@ -12,19 +13,19 @@ const SearchInput = () => {
   };
 
   return (
-    <div className="flex flex-row space-x-3">
+    <div className="flex flex-row relative items-center justify-between bg-[#f0f0f0] px-3 py-2 rounded-[100px] w-auto xl:w-[577px] md:w-[440px]">
       <input
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Tìm kiếm sản phẩm..."
-        className="border rounded px-2"
+        className="bg-[#f0f0f0] focus:bg-transparent border-none active:bg-transparent focus-visible:border-none focus:outline-none px-3"
       />
       <button
         onClick={handleSearch}
-        className="bg-green-400 px-2 rounded text-dark"
+        className="bg-slate-500 mr-1 rounded-[50px] h-10 w-10 hover:bg-slate-400 transition-all ease-in-out duration-500 group flex justify-center items-center"
       >
-        Search
+        <FaSearch className="text-[#fff]/40 group-hover:text-white transition-all ease-in-out duration-500" />
       </button>
     </div>
   );

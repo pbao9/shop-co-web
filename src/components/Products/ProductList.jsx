@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router";
-import SearchInput from "./SearchInput";
+import { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Product from "./Product";
@@ -36,7 +34,6 @@ const ProductList = () => {
 
   return (
     <div>
-      <SearchInput />
       <h1 className="font-bold uppercase">Danh sách sản phẩm</h1>
       <Carousel responsive={responsive}>
         {products.map((product) => (

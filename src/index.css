@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+.test {
+  animation: flyout infinite 4.2s ease-in-out;
+}
+
+@keyframes flyout {
+  50% {
+    transform: translateY(15px);
+  }
+}
