@@ -7,6 +7,8 @@ import Dashboard from "./pages/Users/Dashboard.jsx";
 import Master from "./pages/layout/Master.jsx";
 import ProductDetail from "./pages/Product/ProductDetail.jsx";
 import SearchResults from "./components/Products/SearchResults.jsx";
+import Login from "./pages/Auth/Login.jsx";
+import Register from "./pages/Auth/Register.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -17,6 +19,8 @@ createRoot(document.getElementById("root")).render(
         <Route path="/san-pham/:id" element={<ProductDetail />} />
         <Route path="/tim-kiem" element={<SearchResults />} />
       </Route>
+      <Route path="/dang-nhap" element={<Login />} />
+      <Route path="/dang-ky" element={<Register />} />
     </Routes>
   </BrowserRouter>
 );

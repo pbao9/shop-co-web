@@ -6,5 +6,5 @@ export default {
       fontFamily: { lexend: ["Lexend", "sans-serif"] },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

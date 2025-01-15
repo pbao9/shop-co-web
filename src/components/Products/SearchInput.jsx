@@ -13,20 +13,40 @@ const SearchInput = () => {
   };
 
   return (
-    <div className="flex flex-row relative items-center justify-between bg-[#f0f0f0] px-3 py-2 rounded-[100px] w-auto xl:w-[577px] md:w-[440px]">
-      <input
-        type="text"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        placeholder="Tìm kiếm sản phẩm..."
-        className="bg-[#f0f0f0] w-[100%] focus:bg-transparent border-none active:bg-transparent focus-visible:border-none focus:outline-none px-3"
-      />
+    <div>
+      {/* Open the modal using document.getElementById('ID').showModal() method */}
       <button
-        onClick={handleSearch}
-        className="bg-slate-500 rounded-[50%] h-10 w-11 hover:bg-slate-400 transition-all ease-in-out duration-500 group flex justify-center items-center"
+        className="btn"
+        onClick={() => document.getElementById("my_modal_1").showModal()}
       >
-        <FaSearch className="text-[#fff]/40 group-hover:text-white transition-all ease-in-out duration-500" />
+        <FaSearch />
       </button>
+      <dialog id="my_modal_1" className="modal">
+        <div className="modal-box">
+          <h3 className="font-bold text-lg my-3">Search Product!</h3>
+          <div className="flex flex-row relative items-center justify-between bg-[#f0f0f0] px-3 py-2 rounded-[100px] ">
+            <input
+              type="text"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Search product..."
+              className="bg-[#f0f0f0] w-[100%] focus:bg-transparent border-none active:bg-transparent focus-visible:border-none focus:outline-none px-3"
+            />
+            <button
+              onClick={handleSearch}
+              className="bg-black rounded-[50%] h-10 w-11 hover: transition-all ease-in-out duration-500 group flex justify-center items-center"
+            >
+              <FaSearch className="text-white" />
+            </button>
+          </div>
+          <div className="modal-action">
+            <form method="dialog">
+              {/* if there is a button in form, it will close the modal */}
+              <button className="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </div>
   );
 };
