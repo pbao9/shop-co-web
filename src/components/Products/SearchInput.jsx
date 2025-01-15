@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 const SearchInput = () => {
     const [query, setQuery] = useState('')
     const [liveResults, setLiveResults] = useState([])
-    const [notFound, setNotFound] = useState(false) // State cho not found
+    const [notFound, setNotFound] = useState(false)
     const navigate = useNavigate()
 
     useEffect(() => {
@@ -16,14 +16,14 @@ const SearchInput = () => {
                 .then((data) => {
                     const products = data.products || []
                     setLiveResults(products)
-                    setNotFound(products.length === 0) // Cập nhật trạng thái not found
+                    setNotFound(products.length === 0)
                 })
                 .catch((error) =>
                     console.error('Error fetching live search:', error)
                 )
         } else {
             setLiveResults([])
-            setNotFound(false) // Reset not found nếu query trống
+            setNotFound(false)
         }
     }, [query])
 
