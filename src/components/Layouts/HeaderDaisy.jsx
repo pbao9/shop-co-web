@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import SearchInput from "../Products/SearchInput";
 import { FaCartShopping } from "react-icons/fa6";
-import { FaRegUser } from "react-icons/fa";
+import { FaRegUser, FaSearch } from "react-icons/fa";
 
 const HeaderDaisy = () => {
   return (
@@ -43,7 +43,7 @@ const HeaderDaisy = () => {
               </ul>
             </li>
             <li>
-              <a>Item 3</a>
+              <SearchInput />
             </li>
           </ul>
         </div>
@@ -80,7 +80,6 @@ const HeaderDaisy = () => {
       <div className="navbar-end">
         <div className="gap-2 text-[1.1em] hidden xl:flex mx-5">
           <SearchInput />
-
           <div className="indicator">
             <span className="indicator-item badge badge-secondary">99+</span>
             <button className="btn">

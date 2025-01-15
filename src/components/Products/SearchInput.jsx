@@ -14,14 +14,19 @@ const SearchInput = () => {
 
   return (
     <div>
-      {/* Open the modal using document.getElementById('ID').showModal() method */}
       <button
-        className="btn"
-        onClick={() => document.getElementById("my_modal_1").showModal()}
+        className="btn hidden lg:block"
+        onClick={() => document.getElementById("search_modal").showModal()}
       >
         <FaSearch />
       </button>
-      <dialog id="my_modal_1" className="modal">
+      <a
+        className="block lg:hidden"
+        onClick={() => document.getElementById("search_modal").showModal()}
+      >
+        Search product
+      </a>
+      <dialog id="search_modal" className="modal">
         <div className="modal-box">
           <h3 className="font-bold text-lg my-3">Search Product!</h3>
           <div className="flex flex-row relative items-center justify-between bg-[#f0f0f0] px-3 py-2 rounded-[100px] ">
