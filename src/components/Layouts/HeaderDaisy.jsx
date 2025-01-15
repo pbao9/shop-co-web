@@ -48,9 +48,12 @@ const HeaderDaisy = () => {
                 <a className="btn btn-ghost text-xl">SHOP.CO</a>
             </div>
             <div className="navbar-end">
-                <SearchInput />
-
-                <SearchModals />
+                <div className="hidden lg:block">
+                    <SearchInput />
+                </div>
+                <div className="block lg:hidden">
+                    <SearchModals />
+                </div>
                 <button className="btn btn-ghost btn-circle">
                     <div className="indicator">
                         <svg
