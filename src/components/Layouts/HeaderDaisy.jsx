@@ -78,9 +78,9 @@ const HeaderDaisy = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <SearchInput />
-
         <div className="gap-2 text-[1.1em] hidden xl:flex mx-5">
+          <SearchInput />
+
           <div className="indicator">
             <span className="indicator-item badge badge-secondary">99+</span>
             <button className="btn">
