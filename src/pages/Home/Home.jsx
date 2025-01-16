@@ -54,7 +54,7 @@ const Home = () => {
                                 <div className="flex-1 mb-4">
                                     <div className="flex flex-col items-center">
                                         <img
-                                            src="./public/images/star.png"
+                                            src="https://shop-co-web-three.vercel.app/images/star.png"
                                             className="w-20 h-20 mb-3"
                                         />
                                         <h1 className="font-bold font-lexend">
