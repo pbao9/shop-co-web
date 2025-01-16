@@ -1,4 +1,5 @@
 import Banner from '../../components/Partials/Banner'
+import ProductCategory from '../../components/Products/ProductCategory'
 import ProductList from '../../components/Products/ProductList'
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
             </div>
             <div className="container m-auto">
                 <ProductList />
+                <ProductCategory category={'motorcycle'} />
             </div>
         </div>
     )
