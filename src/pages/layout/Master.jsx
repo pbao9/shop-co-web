@@ -1,20 +1,16 @@
-import { Outlet } from "react-router";
-import Header from "../../components/Layouts/Header";
-import Footer from "../../components/Layouts/Footer";
-import TopBar from "../../components/Layouts/TopBar";
-import HeaderDaisy from "../../components/Layouts/HeaderDaisy";
+import { Outlet } from 'react-router'
+import Footer from '../../components/Layouts/Footer'
+import HeaderDaisy from '../../components/Layouts/HeaderDaisy'
 const Master = () => {
-  return (
-    <div className="page-content">
-      <TopBar />
-      {/* <Header /> */}
-      <HeaderDaisy />
-      <div className="page container m-auto py-20">
-        <Outlet />
-      </div>
-      <Footer />
-    </div>
-  );
-};
+    return (
+        <div className="page-content">
+            <HeaderDaisy />
+            <div className="page m-auto py-[6.8rem]">
+                <Outlet />
+            </div>
+            <Footer />
+        </div>
+    )
+}
 
-export default Master;
+export default Master

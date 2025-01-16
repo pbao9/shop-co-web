@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router'
 import { FaSearch } from 'react-icons/fa'
-import PropTypes from 'prop-types'
 
 const SearchInput = () => {
     const [query, setQuery] = useState('')
@@ -30,6 +29,7 @@ const SearchInput = () => {
     const handleSearch = () => {
         if (query) {
             navigate(`/tim-kiem`, { state: { query } })
+            setQuery('')
         }
     }
 
