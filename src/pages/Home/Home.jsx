@@ -30,7 +30,7 @@ const Home = () => {
                                 <div className="flex-1 mb-4">
                                     <div className="flex flex-col items-center">
                                         <img
-                                            src="./public/images/burning.png"
+                                            src="https://shop-co-web-three.vercel.app/images/burning.png"
                                             className="w-20 h-20 mb-3"
                                         />
                                         <h1 className="font-bold font-lexend">
@@ -41,7 +41,7 @@ const Home = () => {
                                 <div className="flex-1 mb-4">
                                     <div className="flex flex-col items-center">
                                         <img
-                                            src="./public/images/salary.png"
+                                            src="https://shop-co-web-three.vercel.app/images/salary.png"
                                             className="w-20 h-20 mb-3"
                                         />
                                         <h1 className="font-bold font-lexend">
@@ -65,7 +65,7 @@ const Home = () => {
                                 <div className="flex-1 mb-4">
                                     <div className="flex flex-col items-center">
                                         <img
-                                            src="./public/images/user-interface.png"
+                                            src="https://shop-co-web-three.vercel.app/images/user-interface.png"
                                             className="w-20 h-20 mb-3"
                                         />
                                         <h1 className="font-bold font-lexend">
@@ -83,7 +83,7 @@ const Home = () => {
                                     className="viewport"
                                     style={{
                                         backgroundImage:
-                                            "url('./public/images/screen-page.png')",
+                                            "url('https://shop-co-web-three.vercel.app/images/screen-page.png')",
                                     }}
                                 ></div>
                             </div>
@@ -94,21 +94,21 @@ const Home = () => {
                         <div className="flex pt-[3rem]">
                             <div className="flex-1 flex flex-col items-center">
                                 <img
-                                    src="./public/images/phoneframe.png"
+                                    src="https://shop-co-web-three.vercel.app/images/phoneframe.png"
                                     className="w-[200px] floating-animated-image"
                                 />
                                 <img
-                                    src="./public/images/android.png"
+                                    src="https://shop-co-web-three.vercel.app/images/android.png"
                                     className="w-[10rem]"
                                 />
                             </div>
                             <div className="flex-1 flex flex-col items-center">
                                 <img
-                                    src="./public/images/phoneframe.png"
+                                    src="https://shop-co-web-three.vercel.app/images/phoneframe.png"
                                     className="w-[200px] floating-animated-image"
                                 />
                                 <img
-                                    src="./public/images/ios.png"
+                                    src="https://shop-co-web-three.vercel.app/images/ios.png"
                                     className="w-[10rem]"
                                 />
                             </div>
