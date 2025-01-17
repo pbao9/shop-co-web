@@ -1,4 +1,5 @@
 import Banner from '../../components/Partials/Banner'
+import Iphone from '../../components/Partials/Iphone'
 import ProductCategory from '../../components/Products/ProductCategory'
 import ProductList from '../../components/Products/ProductList'
 
@@ -15,6 +16,13 @@ const Home = () => {
             <div className="container m-auto">
                 <ProductList />
                 <ProductCategory category={'motorcycle'} />
+                <div className="my-[5rem]">
+                    <Iphone
+                        title={'Nội thất'}
+                        description={'App bán hàng nội thất'}
+                        image={'./public/images/iPhone-13-PRO-localhost.png'}
+                    />
+                </div>
             </div>
         </div>
     )
